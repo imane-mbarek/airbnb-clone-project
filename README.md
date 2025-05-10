@@ -183,4 +183,25 @@ All API communications will be encrypted using HTTPS, and secure HTTP headers (e
 
 
 
+## CI/CD Pipeline
+
+Continuous Integration (CI) and Continuous Deployment (CD) are crucial practices in modern software development. CI involves automatically building and testing code changes, while CD ensures that the application is always in a deployable state and can be automatically deployed to production.
+
+### Why CI/CD is Important for the Project:
+
+1. **Faster Development Cycle**: By automating testing and deployment, CI/CD helps the team detect bugs early and streamline the release process, allowing for quicker iterations.
+   
+2. **Consistency and Reliability**: With CI/CD, code is automatically tested and validated with every change, ensuring that the application remains stable and production-ready.
+
+3. **Reduced Manual Errors**: Automating deployments eliminates the risk of human error during the release process, ensuring smoother rollouts and updates.
+
+### Tools for CI/CD Pipeline:
+
+- **GitHub Actions**: Automates workflows directly from GitHub, such as running tests and deploying code whenever a change is pushed to the repository.
+- **Docker**: Can be used to containerize the application, making it easier to deploy across different environments with consistency.
+- **Jenkins**: A popular open-source automation server to set up custom CI/CD pipelines with various plugins and integrations.
+- **CircleCI**: Another tool for automating the build, test, and deployment stages, offering easy integration with GitHub repositories.
+
+By implementing CI/CD, the Airbnb Clone project can maintain a high level of quality while reducing the manual effort needed for testing and deploying code.
+
 
