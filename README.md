@@ -26,3 +26,29 @@ Tests the application to identify bugs or usability issues. They ensure that the
 ### 8. Product Owner
 Defines the vision and requirements of the project. They act as the link between the client/stakeholders and the development team, prioritizing features based on business value.
 
+## Technology Stack
+
+The Airbnb Clone project uses a modern and scalable set of technologies to support both frontend and backend development. Below is a list of the core technologies and their roles in the project:
+
+### 1. Django
+A high-level Python web framework used to build robust and scalable backend APIs quickly. Django helps manage the application logic, user authentication, routing, and admin interface.
+
+### 2. PostgreSQL
+A powerful open-source relational database system used to store structured data such as users, listings, bookings, and reviews.
+
+### 3. GraphQL
+A query language for APIs that enables clients to request exactly the data they need. It helps improve frontend performance by minimizing over-fetching.
+
+### 4. HTML/CSS/JavaScript
+Used to build the user interface of the web application. HTML structures the content, CSS styles the layout, and JavaScript adds interactivity.
+
+### 5. React.js (optional)
+A JavaScript library for building fast, responsive, and component-based user interfaces. React can be used with GraphQL to manage UI rendering efficiently.
+
+### 6. Git & GitHub
+Used for version control and collaboration. Git tracks code changes, while GitHub hosts the codebase and supports team collaboration.
+
+### 7. Docker (optional)
+Containerization tool that ensures the application runs consistently across different environments by packaging dependencies together.
+
+
