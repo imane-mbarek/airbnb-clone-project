@@ -52,3 +52,82 @@ Used for version control and collaboration. Git tracks code changes, while GitHu
 Containerization tool that ensures the application runs consistently across different environments by packaging dependencies together.
 
 
+## Database Design
+
+The database schema is designed to support the core functionalities of an Airbnb-like platform. Below are the main entities, their key fields, and relationships:
+
+### 1. Users
+Represents all users of the platform, including hosts and guests.
+
+- `id` (Primary Key)
+- `name`
+- `email`
+- `password_hash`
+- `is_host` (Boolean to identify hosts)
+
+**Relationships**:
+- A user can create multiple properties.
+- A user can make multiple bookings.
+- A user can write multiple reviews.
+
+---
+
+### 2. Properties
+Represents the accommodations listed by hosts.
+
+- `id` (Primary Key)
+- `title`
+- `description`
+- `location`
+- `price_per_night`
+- `host_id` (Foreign Key to Users)
+
+**Relationships**:
+- A property belongs to one host (user).
+- A property can have multiple bookings and reviews.
+
+---
+
+### 3. Bookings
+Represents reservation data for guests.
+
+- `id` (Primary Key)
+- `user_id` (Foreign Key to Users)
+- `property_id` (Foreign Key to Properties)
+- `start_date`
+- `end_date`
+
+**Relationships**:
+- A booking belongs to one user and one property.
+
+---
+
+### 4. Reviews
+Stores feedback left by users after a stay.
+
+- `id` (Primary Key)
+- `user_id` (Foreign Key to Users)
+- `property_id` (Foreign Key to Properties)
+- `rating` (1 to 5)
+- `comment`
+
+**Relationships**:
+- A review belongs to one user and one property.
+
+---
+
+### 5. Payments
+Tracks transactions made for bookings.
+
+- `id` (Primary Key)
+- `booking_id` (Foreign Key to Bookings)
+- `amount`
+- `payment_date`
+- `payment_method`
+
+**Relationships**:
+- A payment is linked to a specific booking.
+
+
+
+
