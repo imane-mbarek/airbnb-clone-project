@@ -144,5 +144,43 @@ Enables hosts to list properties with descriptions, photos, location, availabili
 Allows users to book available properties for specific dates. It handles date validation, prevents
 
 
+## API Security
+
+Securing the backend APIs of the Airbnb Clone project is essential to protect user data, maintain system integrity, and ensure a trustworthy platform experience. The following security measures will be implemented:
+
+### 1. Authentication
+Only registered users can access protected routes using token-based authentication (e.g., JWT). This prevents unauthorized access to user accounts and private data.
+
+**Why it's important**: Protects personal information like email, payment details, and booking history from malicious users.
+
+---
+
+### 2. Authorization
+Role-based access control (RBAC) will be used to ensure users can only perform actions they’re permitted to (e.g., only hosts can add properties).
+
+**Why it's important**: Prevents unauthorized users from accessing or modifying sensitive resources.
+
+---
+
+### 3. Rate Limiting
+Limits the number of requests a user or IP can make in a set time frame. This helps defend against brute force attacks and API abuse.
+
+**Why it's important**: Protects the server from being overwhelmed and enhances platform stability.
+
+---
+
+### 4. Input Validation & Sanitization
+All inputs will be validated and sanitized to prevent SQL injection, XSS, and other injection attacks.
+
+**Why it's important**: Ensures data integrity and protects against malicious scripts or database manipulation.
+
+---
+
+### 5. HTTPS and Secure Headers
+All API communications will be encrypted using HTTPS, and secure HTTP headers (e.g., CORS, CSP) will be configured.
+
+**Why it's important**: Encrypts data in transit and reduces exposure to man-in-the-middle attacks and other vulnerabilities.
+
+
 
 
